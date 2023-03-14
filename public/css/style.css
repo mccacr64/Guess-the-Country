@@ -1,0 +1,40 @@
+/* header{
+    width: 100%;
+    background-color: aqua;
+}
+
+#index-background{
+    background: blue;
+}
+
+body{
+    background: red;
+} */
+body{
+    background: #fcfefc;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#proPic{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+/* HEADER */
+header{
+    padding: 0;
+    background-color:#0d6efd;
+    color: white;
+}
+header a{
+    color: white;
+}
+header a:hover, #logIn:hover{
+    color: rgb(255, 200, 228);
+    font-weight: 700;
+}

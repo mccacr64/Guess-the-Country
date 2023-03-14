@@ -1,0 +1,30 @@
+<%- include('partials/header') -%>
+<%- include('partials/gamesHeader') -%>
+<main>
+    <div id="countryContainer">
+        <div id="titleContainer">
+          <h1>Guess the Country!</h1>
+        </div>
+        
+        <div id="scoreContainer">
+          <h2>Score:<h3 id="scoreCounter"></h3></h2>
+        </div>
+  
+        <div id="flagContainer">
+          <img src="" id="flagImage" alt="">
+          <h1 id="nameOfCountry">NAME</h1>
+        </div>
+        
+    </div>
+
+    <div id="answerContainer">
+        <input type="text" id="userGuess" placeholder="Guess the Country">
+        <button id="btnGuess" type="button" name="button" onclick="">Guess</button>
+        <button id="beginBut">Click to Begin!</button>
+      </div>
+
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script type="text/javascript" src="/main.js"></script>
+</main>
+<%- include('partials/footer') -%>

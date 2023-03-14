@@ -1,0 +1,50 @@
+<%- include('partials/header') -%>
+
+<main class="container" id="index-background">
+
+    <div class="row justify-content-center mt-5">
+        <img 
+        src="https://media.tenor.com/M9pwYMWWSl8AAAAC/globe-earth.gif" alt="spinning globe"
+        style="
+            width: 300px;
+        ">
+    </div>
+
+    <h2>Leaderboard</h2>
+
+    <div id="leaderBoard" class="column justify-content-center mt-5">
+        <ul>
+            <!-- sort array of scores from highest to lowest 
+            Show scores with the user, their motto, and the game mode that score came from... and the button to bring to the users page and if possible the users profile picture-->
+            <% for(let i = 0; i < scores.length ; i++) {%>
+                <li>
+                    <div class="card w-100 mb-4">
+                        <div class="card-body">
+                            <!-- <img class="card-img-top" src="<% scores[i].profilePicture%>" alt="Profile Picture"> -->
+                            <div class="">
+                                <img id="proPic" class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" alt="Profile Picture">
+                                <h5 class="card-title"><%= scores[i].userName %></h5>
+                            </div>
+                            <% if(!scores[i].motto){ %>
+                                <span class="card-title"></span>
+                            <%}else{%>
+                                <span class="card-title">"<%= scores[i].motto %>"</span>
+                            <%}%>
+                            <% if(scores[i].survival){ %>
+                                <h6 class="card-text">Survival Mode Score<strong>: <%= scores[i].survival %></strong></h6>
+                            <% } else { %>
+                                <h6 class="card-text">Survival Mode Score<strong>: 0</strong></h6>
+                            <% } %>
+                            <!-- <a href="/profile/<%=scores[i].id%>" class="btn btn-primary">View User</a> -->
+                            <!-- Can add a feature to make leaderboard brackets for each game mode, and also can add users page to the href there -->
+                            <!-- Maybe add the date the score was from -->
+                        </div>
+                    </div>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</main>
+    
+
+<%- include('partials/footer') -%>

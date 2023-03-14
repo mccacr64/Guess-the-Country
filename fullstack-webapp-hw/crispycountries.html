@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE COUNTRY</title>
+    <link rel="stylesheet" href="/fullstack-webapp-hw/css/style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="countryContainer">
+      <div id="titleContainer">
+        <h1>Guess the Country!</h1>
+      </div>
+      
+      <div id="scoreContainer">
+        <h2>Score:<h3 id="scoreCounter"></h3></h2>
+      </div>
+
+      <div id="flagContainer">
+        <img src="" id="flagImage" alt="">
+        <h1 id="nameOfCountry">NAME</h1>
+      </div>
+      
+    </div>
+    <div id="answerContainer">
+      <input type="text" id="userGuess" placeholder="Guess the Country">
+      <button id="btnGuess" type="button" name="button" onclick="">Guess</button>
+      <button id="beginBut">Click to Begin!</button>
+    </div>
+    <div id="multipleChoiceContainer">
+      <button class="multipleChoiceButton" id="answerOne">One</button>
+      <button class="multipleChoiceButton" id="answerTwo">Two</button>
+      <button class="multipleChoiceButton" id="answerThree">Three</button>
+      <button class="multipleChoiceButton" id="answerFour">Four</button>
+    </div>
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script type="text/javascript" src="/fullstack-webapp-hw/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color: white; /*text color white across */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* #flagImage{
+    block-size: auto;
+    height: 100px;
+    width: 150px;
+} */
+
+header, main{
+    float: left;
+    clear: both;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header h1{
+    text-align: center;
+    font-size: 5rem;
+    background: #ffca3a;
+    color: rgb(40, 40, 40);
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px 2px black;
+}
+
+/*****************
+MAIN
+*****************/
+main #globeContainer{
+    display: flex;
+    text-align: center;
+}
+
+main #globeContainer img{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    background: #f2e8cf;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px 2px black;
+}
+
+main #startContainer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main #startContainer button{
+    width: 25%;
+    font-size: 3rem;
+    padding: 15px;
+    border: none;
+    color: rgb(40, 40, 40);
+    background: #ffca3a;
+    border-radius: 10px;
+}
+
+/*****************
+BODY - For Background Color
+*****************/
+
+body{
+    background: #1982c4;
+}
+
+
+/*****************
+temporary button colors
+*****************/
+#btnGuess, #beginBut, .multipleChoiceButton{
+    font-size: 2rem;
+    border: none;
+    color: black;
+    background: #ffca3a;
+    border-radius: 10px;
+}
+/*****************
+MULTIPLE CHOICE
+*****************/
+#multipleChoiceContainer{
+    background: #1982c4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-top: 50px;
+}
+.multipleChoiceButton{
+    flex: 50%;
+    margin-top: 25px;
+}
+#btnGuess:hover, #beginBut:hover, .multipleChoiceButton:hover{
+    background: #8ac926;
+}
+/*****************
+GAME PAGE
+*****************/
+
+#flagContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#answerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

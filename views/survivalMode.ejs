@@ -1,0 +1,57 @@
+<%- include('partials/header') -%>
+<%- include('partials/gamesHeader') -%>
+  <main>
+    <div id="countryContainer">
+      <!-- <div id="titleContainer">
+        <h1>Guess the Country!</h1>
+      </div> -->
+
+      <div id="flagContainer">
+        <img src="" id="flagImage" alt="">
+        <h1 id="nameOfContinent"></h1>
+      </div>
+      
+      <form id="scoreForm" action="/games/survival/survivalScore?_method=PUT"
+      method="POST">
+        <div id="scoreContainer">
+          <label for="survivalScore">Score:</label>
+            <!-- <h3 name="survivalScore" id="scoreCounter">0</h3> -->
+          <!-- </h2> -->
+          <input type="number" class="" name="survivalScore" id="scoreCounter" value="0">
+        </div>
+      <!-- </form> -->
+
+      <!-- <form id="" action="/survival/survivalLives?_method=PUT"
+      method="POST"> -->
+        <div id="livesContainer">
+          <label id="livesLabel" for="lives">Lives Remaining:</label>
+          <input type="number" name="lives" id="livesRemaining" value="3" >
+        </div>
+
+        <!-- <div id="answerContainer">
+          <button id="beginBut" type="submit">Click to Begin!</button>
+        </div> -->
+
+    </form>
+
+    </div>
+
+    <div id="multipleChoiceContainer">
+      <div>
+        <button type="submit" class="multipleChoiceButton" id="answerOne">One</button>
+      </div>
+      <div>
+        <button type="submit" class="multipleChoiceButton" id="answerTwo">Two</button>
+      </div>
+      <div>
+        <button type="submit" class="multipleChoiceButton" id="answerThree">Three</button>
+      </div>
+      <div>
+        <button type="submit" class="multipleChoiceButton" id="answerFour">Four</button>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT LINKS  -->
+    <script type="text/javascript" src="/survival.js"></script>
+</main>
+<%- include('partials/footer') -%>
