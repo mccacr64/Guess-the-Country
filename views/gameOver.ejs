@@ -11,18 +11,21 @@
         ">
     </div>
 
-    <h1>GAME OVER</h1>
-    <form id="myForm" action="/games/survival/survivalScore?_method=PUT"
+    <h1 id="gameOver">GAME OVER</h1>
+    <form id="scoreForm" action="/games/survival/survivalScore?_method=PUT"
     method="POST">
-      <div id="scoreContainer">
+      <div id="finalScoreContainer">
         <label for="survivalScore">You Scored:</label>
           <!-- <h3 name="survivalScore" id="scoreCounter">0</h3> -->
         <!-- </h2> -->
-        <input type="text" class="" name="survivalScore" id="scoreCounter" value="<%=user.currentScore%>">
+        <input type="text" class="" name="survivalScore" id="finalScoreCount" value="<%=user.currentScore%>" readonly>
       </div>
     </form>
+    <div id="gameOverButtonContainer">
+      <a class="gameOverButton" href="/games">Return to Menu</a>
+      <a class="gameOverButton" href="/games/survival">Try Again</a>
+    </div>
 
-    <button><a href="/games">Try Again</a></button>
 
 </main>
     

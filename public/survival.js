@@ -117,15 +117,13 @@ function randomAnswers(index){
     // for(let i = 0; i < answerArray.length; i++){
     //   answerArray[i].innerText = data[Math.floor(Math.random() * 250)].name.common;
     // }
-    answerArray[0].innerText = data[Math.floor(Math.random() * 250)].name.common;
-    answerArray[1].innerText = data[Math.floor(Math.random() * 250)].name.common;
-    answerArray[2].innerText = data[Math.floor(Math.random() * 250)].name.common;
-    answerArray[3].innerText = data[Math.floor(Math.random() * 250)].name.common;
+    answerArray[0].innerText = data[Math.floor(Math.random() * 62)].name.common;
+    answerArray[1].innerText = data[Math.floor((Math.random() * 63) + 62)].name.common;
+    answerArray[2].innerText = data[Math.floor((Math.random() * 62) + 125)].name.common;
+    answerArray[3].innerText = data[Math.floor((Math.random() * 63) + 187)].name.common;
     answerArray[Math.floor(Math.random() * 4)].innerText = data[index].name.common;
   });
 }
-
-
 
 //Function to check if answer is correct 
 function rightOrWrong(guessedAnswer, correctAnswer){
@@ -188,4 +186,4 @@ function onePoint(){
 }
   if(localStorage.getItem('userScore')){
   localStorage.setItem('userScore', 0)
-  }
+}

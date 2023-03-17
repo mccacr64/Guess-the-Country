@@ -15,7 +15,7 @@ body{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 ul{
     list-style: none;
@@ -30,6 +30,7 @@ header{
     padding: 0;
     background-color:#0d6efd;
     color: white;
+    border-bottom: black 2px solid;
 }
 header a{
     color: white;
