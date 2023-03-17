@@ -1,17 +1,9 @@
-/* header{
-    width: 100%;
-    background-color: aqua;
-}
-
-#index-background{
-    background: blue;
-}
-
-body{
-    background: red;
-} */
 body{
     background: #fcfefc;
+}
+
+#header{
+    background: #5c364d;
 }
 
 a{
@@ -28,14 +20,20 @@ ul{
 /* HEADER */
 header{
     padding: 0;
-    background-color:#0d6efd;
     color: white;
     border-bottom: black 2px solid;
 }
-header a{
-    color: white;
+header span{
+    font-style: italic;
 }
-header a:hover, #logIn:hover{
-    color: rgb(255, 200, 228);
+header a{
+    width: 100%;
+    text-align: center;
+    color: white;
     font-weight: 700;
 }
+header a:hover, #logIn:hover{
+    color: white;
+    background-color: #c37857;
+}
+/* BUTTONS */

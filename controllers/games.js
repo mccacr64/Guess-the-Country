@@ -44,13 +44,12 @@ module.exports = {
                 {
                     upsert: true
                 }
-                // survival: req.body.survivalScore,
-                // id: req.user.id
             ).lean();
             // How to stop refreshing?
             if(req.body.lives <= 0){
                 res.redirect('/games/gameOver')
             }
+
             console.log(`${req.user.userName}'s Score is ${req.body.survivalScore}`);
             console.log(`${req.user.userName} has ${req.body.lives} lives remaining`)
         } catch (err){
