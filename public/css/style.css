@@ -1,9 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background: #fcfefc;
+    background: #f0ece2;
 }
 
 #header{
     background: #5c364d;
+    margin: 0;
 }
 
 a{
@@ -12,6 +18,7 @@ a{
 ul{
     list-style: none;
 }
+
 #proPic{
     width: 50px;
     height: 50px;
@@ -19,21 +26,47 @@ ul{
 }
 /* HEADER */
 header{
-    padding: 0;
     color: white;
-    border-bottom: black 2px solid;
+    box-shadow: 0 5px 20px black;
 }
 header span{
     font-style: italic;
 }
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header a{
     width: 100%;
-    text-align: center;
     color: white;
     font-weight: 700;
+    text-align: center;
 }
-header a:hover, #logIn:hover{
+
+header h1 a:hover{
     color: white;
-    background-color: #c37857;
+}
+
+header nav a:hover{
+    background: #99b27f;
+    color: white;
 }
 /* BUTTONS */
+
+.logInButtons{
+    background-color: #99b27f;
+    color: black;
+    border: 2px solid #f0ece2;;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+.logInButtons:hover{
+    background: #ffd86e;
+    border: 2px solid black;
+    color: black;
+    box-shadow: 0 5px 15px black;
+}
