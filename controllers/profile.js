@@ -7,10 +7,9 @@ module.exports = {
     try {
       // console.log(req.user)
         // console.log(cloudinary.uploader.upload)
-        // const result = await cloudinary.uploader.upload(req.file.path);
+        const result = await cloudinary.uploader.upload(req.file.path);
         // let user = await User.find({ _id: req.params.user });
         // let motto = await User.find({ _id: req.params.motto });
-        // const user = await User.findById(req.params.id).lean()
         // const user = await User.findById(req.params.id).lean()
       // IF INPUT IS EMPTY DON"T CHANGE
       console.log(req.params.id)
@@ -20,12 +19,13 @@ module.exports = {
         {
           userName: req.body.userName,
           motto: req.body.motto,
-          // user: req.user.id,
-        // profilePicture: result.secure_url, 
-        // cloudinaryId: result.public_id,
+          user: req.user.id,
+          profilePicture: result.secure_url, 
+          cloudinaryId: result.public_id,
         }
       ).lean();
       console.log(`Changed ${req.user.email} Info`);
+      console.log(`This is the picture ${req.body.imgUpload}`);
       res.redirect(`/profile`);
     } catch (err) {
       console.log(err);

@@ -23,14 +23,14 @@
                 <input type="file" class="form-control" id="imageUpload" name="imgUpload">
                 <!-- How to make this mp3 upload -->
               </div>
-              <button type="submit" class="btn btn-primary link-button" value="Upload">Submit</button>
+              <button type="submit" class=" col-3 btn btn-primary link-button logInButtons" value="Upload">Submit</button>
             </form>
             <%}%>
           </div>
       </div>
       <div class="col-6">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="<% user.profilePicture%>" alt="Profile Picture">
+          <img class="card-img-top" src="<%= user.profilePicture%>" alt="Profile Picture">
           <div class="card-body">
             <h5 class="card-title"><strong>User Name</strong>: <%= user.userName %></h5>
             <p class="card-text"><strong>Motto</strong>:<%= user.motto %></p>

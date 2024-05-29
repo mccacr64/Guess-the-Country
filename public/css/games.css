@@ -85,7 +85,7 @@ body{
 
 #btnGuess, #beginBut, .multipleChoiceButton, .gameOverButton{
     border: 2px solid black;
-    background: #99b27f;
+    background-color: #90599e;
     border-radius: 5px;
 }
 /*****************

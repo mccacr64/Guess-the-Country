@@ -7,12 +7,17 @@ const MongoStore = require("connect-mongo")(session);
 const methodOverride = require("method-override");
 const flash = require("express-flash");
 const logger = require("morgan");
+const cors = require("cors") //my api requests were restricted due to cors this should fix
 const connectDB = require("./config/database");
+// Routes
 const mainRoutes = require("./routes/main");
 const homeRoutes = require("./routes/home");
 const postRoutes = require("./routes/posts");
 const gamesRoutes = require("./routes/games");
 const profileRoutes = require("./routes/profile");
+
+//I'M ADDING THIS TO HOPEFULLY FIX API
+app.use(cors())
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
@@ -67,6 +72,6 @@ app.use("/games", gamesRoutes);
 //Server Running
 connectDB().then(() => {
   app.listen(process.env.PORT, () => {
-    console.log("Server is running, you better catch it!");
+    console.log(`Server is running you better catch it!`);
   });
 });

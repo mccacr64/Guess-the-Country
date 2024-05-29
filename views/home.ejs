@@ -4,7 +4,7 @@
 
     <div class="row justify-content-center mt-5">
         <img 
-        src="https://media.tenor.com/M9pwYMWWSl8AAAAC/globe-earth.gif" alt="spinning globe"
+        src="https://1.bp.blogspot.com/-Os_G7fBordU/W1dFCdFA3AI/AAAAAAAAp-I/NLfM0h9Nvw42dtkvBlgzC_1_QFmKHBEVgCLcBGAs/s1600/world_flags_globe_1.gif" alt="spinning globe"
         style="
             width: 300px;
         ">
@@ -22,7 +22,10 @@
                         <div class="card-body">
                             <!-- <img class="card-img-top" src="<% scores[i].profilePicture%>" alt="Profile Picture"> -->
                             <div class="">
-                                <img id="proPic" class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" alt="Profile Picture">
+                                <!-- <img id="proPic" class="card-img-top" src="https://source.unsplash.com/random" 
+                                alt="Profile Picture"> -->
+                                <img id="proPic" class="card-img-top" src="<%= scores[i].userPicture %>" 
+                                alt="Profile Picture">
                                 <h5 class="card-title"><%= scores[i].userName %></h5>
                             </div>
                             <% if(!scores[i].motto){ %>
